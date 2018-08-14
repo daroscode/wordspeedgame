@@ -1,3 +1,10 @@
+//Making it pwa
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('ws.js')
+  .then(function(){
+    console.log('SW registered');
+  });
+}
 //Starting
 window.addEventListener("load", init);
 
